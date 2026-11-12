@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101018;
+    color: white;
+}
+
+header {
+    background: #191923;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ff4757;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ff4757;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #292943, #111119);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.hero input {
+    max-width: 400px;
+}
+
+.movies, .reviews {
+    padding: 50px 8%;
+}
+
+.movies h2, .reviews h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4757;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.movie-card {
+    background: #20202d;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    margin: 15px 0;
+}
+
+.movie-card p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e84150;
+}
+
+.reviews form {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.review-card {
+    background: #20202d;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 550px;
+    border-radius: 8px;
+}
+
+.review-card p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    background: #191923;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
